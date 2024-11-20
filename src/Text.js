@@ -258,6 +258,7 @@ export const Gabinet = [
             description: "W naszym nowym spa oferujemy aż trzy nowoczesne sauny: sucha, mokra i infrared. Mamy także do dyspozycji panel infrared, który przyspiesza krążenie krwi. W trakcie korzystania z niego skóra wydala zanieczyszczenia i martwe komórki. Każdy znajdzie coś dla siebie! Dysponujemy również fantastycznymi gościnnymi saunami: jacuzzi zewnętrzne i wewnętrzne."
         }
     ];
+    
 export const Wlosy = [
         {
             title: "Regeneracja Włosów Intelligent",
@@ -266,89 +267,89 @@ export const Wlosy = [
             price: "180zł"
         }
     ];
-
-export const DetalSpa = [
-    {
-        title: "Spa W New Wave",
-        description: "Spa w tym hotelu to jest coś niesamowitego, przeżyjecie państwo istną rozkosz oraz zapomnicie o swoich problemach",
-        place: "Wisła",
-        name: "New Wave",
-        additionalDetails: {
-            facilities: ["basen wewnętrzny", "sauna sucha", "sauna mokra", "sauna infrared", "jacuzzi zewnętrzne", "jacuzzi wewnętrzne"],
-            openingHours: "8:00 - 22:00",
-            contact: "tel: 123-456-789",
-            offers: ["Weekend spa", "Pakiet relaksacyjny", "Wieczór w saunie"]
+    export const DetalSpa = [
+        {
+            title: "Spa W New Wave",
+            description: "Spa w tym hotelu to miejsce, gdzie można się zrelaksować i odpocząć od codziennych obowiązków. Gwarantujemy niezapomniane wrażenia i pełen relaks.",
+            place: "Wisła",
+            name: "New Wave",
+            additionalDetails: {
+                godzinyOtwarcia: "8:00 - 22:00",
+                kontakt: "tel: 123-456-789",
+                oferty: [
+                    "Weekend spa",
+                    "Pakiet relaksacyjny",
+                    "Wieczór w spa"
+                ]
+            }
         }
-    }
-];
-export const DetalBasen = [
-    {
-        title: "Basen wewnętrzny z atrakcjami wodnymi",
-        description: "Po aktywnym dniu na stoku lub po wędrówkach na pięknych wiślańskich szlakach nie ma nic przyjemniejszego niż relaks w basenie. Znajduje się duże jacuzzi. Zimą po porannym treningu jak na wieczornym relaksie delektuj się zamkniętym oszklonym basenem z cudownym widokiem na pejzaż Wisły.",
-        additionalDetails: {
-            temperature: "30°C",
-            depth: "1.5m",
-            jacuzziCapacity: "8 osób",
-            rules: ["Czepek obowiązkowy", "Zakaz skakania"]
+    ];
+    
+    export const DetalBasen = [
+        {
+            title: "Basen wewnętrzny z atrakcjami wodnymi",
+            description: "Po aktywnym dniu na stoku lub po wędrówkach na pięknych wiślańskich szlakach nie ma nic przyjemniejszego niż relaks w basenie. Znajduje się duże jacuzzi. Zimą po porannym treningu jak na wieczornym relaksie delektuj się zamkniętym oszklonym basenem z cudownym widokiem na pejzaż Wisły.",
+            additionalDetails: {
+                temperatura: "30°C",
+                głębokość: "1.5m",
+                pojemnośćJacuzzi: "8 osób",
+                zasady: ["Czepek obowiązkowy", "Zakaz skakania"]
+            }
+        },
+        {
+            title: "Basen Zewnętrzny",
+            description: "W okresie letnim (basen czynny od 1 maja do 1 września) proponujemy również pobyt nad odkrytym basenem z podgrzewaną wodą (27-29 stopni). Odpoczywając na leżakach, można złapać fantastyczną opaleniznę! Basen wyłącznie do użytku gości hotelu.",
+            additionalDetails: {
+                temperatura: "27-29°C",
+                strefaOpalania: "dostępne leżaki",
+                okres: "1 maja - 1 września",
+                zasady: ["Zakaz wnoszenia szklanych naczyń"]
+            }
         }
-    },
-    {
-        title: "Basen Zewnętrzny",
-        description: "W okresie letnim (basen czynny od 1 maja do 1 września) proponujemy również pobyt nad odkrytym basenem z podgrzewaną wodą (27-29 stopni). Odpoczywając na leżakach, można złapać fantastyczną opaleniznę! Basen wyłącznie do użytku gości hotelu.",
-        additionalDetails: {
-            temperature: "27-29°C",
-            sunbathingArea: "dostępne leżaki",
-            period: "1 maja - 1 września",
-            rules: ["Zakaz wnoszenia szklanych naczyń"]
+    ];
+    export const DetalGabinet = [
+        {
+            title: "SPA New Wave",
+            description: "W naszym spa oferujemy szeroki wybór relaksujących zabiegów, które pomogą Ci się odprężyć i odzyskać energię. W ofercie znajdują się wyjątkowe terapie wodne, pielęgnacyjne rytuały oraz masaże, które sprawią, że poczujesz się wyjątkowo. Zapraszamy do skorzystania z naszych usług, które pomogą Ci zapomnieć o codziennych troskach.",
+            additionalDetails: {
+                zabiegi: ["Zabiegi na Twarz", "Zabiegi na Ciało", "rytuały pielęgnacyjne"],
+                godzinyOtwarcia: "9:00 - 21:00"
+            }
+        },
+        {
+            title: "Gabinet masażu",
+            description: "Nasz gabinet masażu to idealne miejsce, by zregenerować siły po dniu pełnym wrażeń. Oferujemy masaże dostosowane do indywidualnych potrzeb, w tym masaże klasyczne, aromaterapeutyczne i relaksacyjne, które pomogą Ci się odprężyć i odzyskać wewnętrzną równowagę.",
+            additionalDetails: {
+                Wygląd: ["Piękne miejsce", "Przytulnie", "Relaksająco"],
+                godzinyOtwarcia: "9:00 - 20:00"
+            }
+        },
+        {
+            title: "Gabinet Kosmetyczny",
+            description: "Nasza oferta kosmetyczna obejmuje szeroką gamę zabiegów pielęgnacyjnych dla twarzy i ciała, które pozwolą Ci zadbać o wygląd i samopoczucie. W ofercie znajdziesz zabiegi oczyszczające, nawilżające oraz regenerujące, które poprawią kondycję skóry oraz przywrócą jej naturalny blask.",
+            additionalDetails: {
+                zabiegiKosmetyczne: ["Zabiegi Relaksujące", "zabiegi nawilżające", "regeneracja skóry"],
+                godzinyOtwarcia: "9:00 - 21:00"
+            }
         }
-    }
-];
-export const DetalGabinet = [
-    {
-        title: "SPA",
-        description: "W naszym nowym spa oferujemy aż trzy nowoczesne sauny: sucha, mokra i infrared. Mamy także do dyspozycji panel infrared, który przyspiesza krążenie krwi. W trakcie korzystania z niego skóra wydala zanieczyszczenia i martwe komórki. Każdy znajdzie coś dla siebie! Dysponujemy również fantastycznymi gościnnymi saunami: jacuzzi zewnętrzne i wewnętrzne.",
-        additionalDetails: {
-            saunas: ["sucha", "mokra", "infrared"],
-            panels: ["infrared"],
-            jacuzzi: ["zewnętrzne", "wewnętrzne"],
-            openingHours: "10:00 - 22:00"
+    ];
+    
+    
+    export const DetalWlosy = [
+        {
+            title: "Regeneracja Włosów Intelligent",
+            description: `Zabieg Intelligent\nCena regularna: 220 zł\nCena okazyjna: 180 zł\nStworzone dla ciebie Jeśli:\n- Twoje włosy są osłabione przez czynniki zewnętrzne\n- Twoje włosy zostały uszkodzone przez wysokie temperatury prostownic, lokówek i suszarki\n- Jeśli twoje włosy ucierpiały z powodu zastosowanych wcześniej zabiegów chemicznych takich jak: nieodpowiednie tworzenie pasemek, prostowanie, rozjaśnianie i trwałe\n\nZabieg regeneracyjny na włosy, działający od wewnętrznej do zewnętrznej strony włosa, przywracający im naturalną kondycję, moc, strukturę, perfekcyjny wygląd oraz połysk`,
+            time: "60 min",
+            price: "180zł",
+            additionalDetails: {
+                cenaRegularna: "220 zł",
+                cenaOkazyjna: "180 zł",
+                warunki: [
+                    "Włosy osłabione przez czynniki zewnętrzne",
+                    "Włosy uszkodzone przez wysokie temperatury prostownic, lokówek i suszarki",
+                    "Włosy uszkodzone przez wcześniejsze zabiegi chemiczne (nieodpowiednie tworzenie pasemek, prostowanie, rozjaśnianie, trwałe)"
+                ]
+            }
         }
-    },
-    {
-        title: "Gabinet masażu",
-        description: "W naszym nowym spa oferujemy aż trzy nowoczesne sauny: sucha, mokra i infrared. Mamy także do dyspozycji panel infrared, który przyspiesza krążenie krwi. W trakcie korzystania z niego skóra wydala zanieczyszczenia i martwe komórki. Każdy znajdzie coś dla siebie! Dysponujemy również fantastycznymi gościnnymi saunami: jacuzzi zewnętrzne i wewnętrzne.",
-        additionalDetails: {
-            saunas: ["sucha", "mokra", "infrared"],
-            panels: ["infrared"],
-            jacuzzi: ["zewnętrzne", "wewnętrzne"],
-            openingHours: "10:00 - 20:00"
-        }
-    },
-    {
-        title: "Gabinet Kosmetyczny",
-        description: "W naszym nowym spa oferujemy aż trzy nowoczesne sauny: sucha, mokra i infrared. Mamy także do dyspozycji panel infrared, który przyspiesza krążenie krwi. W trakcie korzystania z niego skóra wydala zanieczyszczenia i martwe komórki. Każdy znajdzie coś dla siebie! Dysponujemy również fantastycznymi gościnnymi saunami: jacuzzi zewnętrzne i wewnętrzne.",
-        additionalDetails: {
-            saunas: ["sucha", "mokra", "infrared"],
-            panels: ["infrared"],
-            jacuzzi: ["zewnętrzne", "wewnętrzne"],
-            openingHours: "9:00 - 21:00"
-        }
-    }
-];
-export const DetalWlosy = [
-    {
-        title: "Regeneracja Włosów Intelligent",
-        description: `Zabieg Intelligent\nCena regularna: 220 zł\nCena okazyjna: 180 zł\nStworzone dla ciebie Jeśli:\n- Twoje włosy są osłabione przez czynniki zewnętrzne\n- Twoje włosy zostały uszkodzone przez wysokie temperatury prostownic, lokówek i suszarki\n- Jeśli twoje włosy ucierpiały z powodu zastosowanych wcześniej zabiegów chemicznych takich jak: nieodpowiednie tworzenie pasemek, prostowanie, rozjaśnianie i trwałe\n\nZabieg regeneracyjny na włosy, działający od wewnętrznej do zewnętrznej strony włosa, przywracający im naturalną kondycję, moc, strukturę, perfekcyjny wygląd oraz połysk`,
-        time: "60 min",
-        price: "180zł",
-        additionalDetails: {
-            regularPrice: "220 zł",
-            discountPrice: "180 zł",
-            conditions: [
-                "Włosy osłabione przez czynniki zewnętrzne",
-                "Włosy uszkodzone przez wysokie temperatury prostownic, lokówek i suszarki",
-                "Włosy uszkodzone przez wcześniejsze zabiegi chemiczne (nieodpowiednie tworzenie pasemek, prostowanie, rozjaśnianie, trwałe)"
-            ]
-        }
-    }
-];
+    ];
+    
